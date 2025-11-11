@@ -4,3 +4,58 @@ title: CliMA coupled land slowdown
 description: Investigating why a CliMA coupled simulation is disproportionately
   slower with the integrated land model versus a bucket model.
 git_repo_url: https://github.com/petebachant/clima-coupled-land-slowdown
+
+questions:
+  - Why is the AMIP coupled config so much slower when using the integrated
+    land model versus the bucket model?
+
+environments:
+  clima:
+    kind: slurm
+    host: clima.gps.caltech.edu
+
+pipeline:
+  stages:
+    baseline-bucket-nsys:
+      kind: sbatch
+      environment: clima
+      script_path: scripts/run-nsys.sh
+      sbatch_options:
+        - --gpus=1
+        - --time=30
+      args:
+        - results/nsys/baseline-bucket
+        - ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
+      inputs:
+        - scripts/run.jl
+        - ClimaCoupler.jl/src
+        - ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
+        - ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml
+        - ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl
+      outputs:
+        - results/nsys/baseline-bucket.nsys-rep
+    # amip-clima-ncu:
+    #   kind: sbatch
+    #   environment: clima
+    #   script_path: scripts/run-ncu-clima.sh
+    #   sbatch_options:
+    #     - --gpus=1
+    #     - --time=240
+    #   args:
+    #     - ncu-outputs/amip-target-edonly-63
+    #     - --config ClimaAtmos.jl/config/common_configs/numerics_sphere_he30ze63.yml
+    #     - --config config/amip_target_edonly.yml
+    #     - --kernel-name copyto_stencil_kernel_
+    #     - --launch-skip 0
+    #     - --launch-count 20
+    #   inputs:
+    #     - ClimaAtmos.jl/perf/benchmark_step.jl
+    #     - ClimaAtmos.jl/config/default_configs/default_config.yml
+    #     - ClimaAtmos.jl/config/common_configs/numerics_sphere_he30ze63.yml
+    #     - config/amip_target_edonly.yml
+    #     - ClimaAtmos.jl/toml/longrun_aquaplanet.toml
+    #     - ClimaAtmos.jl/src
+    #     - ClimaCore.jl/src
+    #     - Manifest.toml
+    #   outputs:
+    #     - ncu-outputs/amip-target-edonly-63.ncu-rep
