@@ -1,0 +1,6 @@
+owner: petebachant
+name: clima-coupled-land-slowdown
+title: CliMA coupled land slowdown
+description: Investigating why a CliMA coupled simulation is disproportionately
+  slower with the integrated land model versus a bucket model.
+git_repo_url: https://github.com/petebachant/clima-coupled-land-slowdown
