@@ -21,7 +21,7 @@ shift
 if [ "$#" -gt 0 ]; then
   EXTRA_CONFIGS=""
   for arg in "$@"; do
-    EXTRA_CONFIGS="$EXTRA_CONFIGS --config $arg"
+    EXTRA_CONFIGS="$EXTRA_CONFIGS --config_file $arg"
   done
 fi
 

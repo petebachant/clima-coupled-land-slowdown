@@ -15,6 +15,31 @@ environments:
     host: clima.gps.caltech.edu
 
 pipeline:
+  # TODO: Add stage templates feature to reduce duplication
+  # stage_templates:
+  #   nsys:
+  #     template:
+  #       kind: sbatch
+  #       environment: clima
+  #       script_path: scripts/run-nsys.sh
+  #       sbatch_options:
+  #         - --gpus=1
+  #         - --time=30
+  #       args:
+  #         - "results/nsys/{case_name}"
+  #         - "{project_dir}"
+  #         - "{config_yaml_fpath}"
+  #       inputs:
+  #         - scripts/run.jl
+  #         - ClimaCoupler.jl/src
+  #         - "{project_dir}/Manifest-v1.11.toml"
+  #         - ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl
+  #       outputs:
+  #         - "results/nsys/{case_name}.nsys-rep"
+  #     inputs:
+  #       case_name: str
+  #       project_dir: str
+  #       config_yaml_fpath: str
   stages:
     baseline-bucket-nsys:
       kind: sbatch
@@ -24,8 +49,9 @@ pipeline:
         - --gpus=1
         - --time=30
       args:
-        - results/nsys/baseline-bucket
-        - ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
+        - results/nsys/baseline-bucket # Output
+        - ClimaCoupler.jl/experiments/ClimaEarth # Project folder
+        - ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml # Config
       inputs:
         - scripts/run.jl
         - ClimaCoupler.jl/src

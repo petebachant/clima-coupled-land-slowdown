@@ -1,0 +1,43 @@
+schema: '2.0'
+stages:
+  baseline-bucket-nsys:
+    cmd: calkit slurm batch --name baseline-bucket-nsys --environment clima 
+      --dep scripts/run.jl --dep ClimaCoupler.jl/src --dep 
+      ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml --dep 
+      ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml --dep 
+      ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl --out 
+      results/nsys/baseline-bucket.nsys-rep -s --gpus=1 -s --time=30 -- 
+      scripts/run-nsys.sh results/nsys/baseline-bucket 
+      ClimaCoupler.jl/experiments/ClimaEarth 
+      ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
+    deps:
+    - path: ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
+      hash: md5
+      md5: 2bb9ee88715bbe5ea7734bb1062a8832
+      size: 629
+    - path: ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml
+      hash: md5
+      md5: 422db1fb84f6a3f1a8ac28ea05b0202e
+      size: 123552
+    - path: ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl
+      hash: md5
+      md5: 6717a8d23dd2a378b1fe42a7c2131079
+      size: 27316
+    - path: ClimaCoupler.jl/src
+      hash: md5
+      md5: fd3699e89424b2b2933f19286b979359.dir
+      size: 76450
+      nfiles: 9
+    - path: scripts/run-nsys.sh
+      hash: md5
+      md5: d36f4c26ca500ac13504e3e2fd62ab68
+      size: 1524
+    - path: scripts/run.jl
+      hash: md5
+      md5: 95e8d233ab47bbabe59e6437234a2179
+      size: 955
+    outs:
+    - path: results/nsys/baseline-bucket.nsys-rep
+      hash: md5
+      md5: 6cfbba8dffe56699ee97f88c5cd4b9a4
+      size: 1558900
