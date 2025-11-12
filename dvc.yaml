@@ -5,7 +5,7 @@ stages:
       ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml --dep 
       ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml --dep
       ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl --out 
-      results/nsys/baseline-bucket.nsys-rep -s --gpus=1 -s --time=30 
+      results/nsys/baseline-bucket.nsys-rep -s --gpus=1 -s --time=60 
       -- scripts/run-nsys.sh results/nsys/baseline-bucket 
       ClimaCoupler.jl/experiments/ClimaEarth 
       ClimaCoupler.jl/config/longrun_configs/amip_edonly.yml
@@ -29,7 +29,7 @@ stages:
       --dep ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml
       --dep ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl --out 
       results/nsys/baseline-integrated.nsys-rep -s --gpus=1 -s 
-      --time=30 -- scripts/run-nsys.sh 
+      --time=60 -- scripts/run-nsys.sh 
       results/nsys/baseline-integrated 
       ClimaCoupler.jl/experiments/ClimaEarth 
       ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml
