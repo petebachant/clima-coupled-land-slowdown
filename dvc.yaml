@@ -21,3 +21,27 @@ stages:
           persist: true
     desc: Automatically generated from the 'baseline-bucket-nsys' 
       stage in calkit.yaml. Changes made here will be overwritten.
+  baseline-integrated-nsys:
+    cmd: calkit slurm batch --name baseline-integrated-nsys 
+      --environment clima --dep scripts/run.jl --dep 
+      ClimaCoupler.jl/src --dep 
+      ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml
+      --dep ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml
+      --dep ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl --out 
+      results/nsys/baseline-integrated.nsys-rep -s --gpus=1 -s 
+      --time=30 -- scripts/run-nsys.sh 
+      results/nsys/baseline-integrated 
+      ClimaCoupler.jl/experiments/ClimaEarth 
+      ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml
+    deps:
+      - scripts/run-nsys.sh
+      - scripts/run.jl
+      - ClimaCoupler.jl/src
+      - ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml
+      - ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml
+      - ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl
+    outs:
+      - results/nsys/baseline-integrated.nsys-rep:
+          persist: true
+    desc: Automatically generated from the 'baseline-integrated-nsys' 
+      stage in calkit.yaml. Changes made here will be overwritten.

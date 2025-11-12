@@ -22,5 +22,29 @@
             "ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml": "422db1fb84f6a3f1a8ac28ea05b0202e",
             "ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl": "6717a8d23dd2a378b1fe42a7c2131079"
         }
+    },
+    "baseline-integrated-nsys": {
+        "job_id": "135247",
+        "deps": [
+            "scripts/run-nsys.sh",
+            "scripts/run.jl",
+            "ClimaCoupler.jl/src",
+            "ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml",
+            "ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml",
+            "ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl"
+        ],
+        "args": [
+            "results/nsys/baseline-integrated",
+            "ClimaCoupler.jl/experiments/ClimaEarth",
+            "ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml"
+        ],
+        "dep_md5s": {
+            "scripts/run-nsys.sh": "d36f4c26ca500ac13504e3e2fd62ab68",
+            "scripts/run.jl": "95e8d233ab47bbabe59e6437234a2179",
+            "ClimaCoupler.jl/src": "f36ef0fa2bd47527aaf73e4de4c2e38b",
+            "ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml": "1775fefe23e5809ae9de5f0fd4a6a0fc",
+            "ClimaCoupler.jl/experiments/ClimaEarth/Manifest-v1.11.toml": "422db1fb84f6a3f1a8ac28ea05b0202e",
+            "ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl": "6717a8d23dd2a378b1fe42a7c2131079"
+        }
     }
 }
