@@ -53,8 +53,7 @@ stages:
       ClimaCoupler.jl-mod/experiments/ClimaEarth/Manifest-v1.11.toml 
       --dep ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl 
       --out results/nsys/mod-integrated.nsys-rep -s --gpus=1 -s 
-      --time=60 -- scripts/run-nsys.sh 
-      results/nsys/baseline-integrated 
+      --time=60 -- scripts/run-nsys.sh results/nsys/mod-integrated 
       ClimaCoupler.jl-mod/experiments/ClimaEarth 
       ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly_integrated_land.yml
     deps:

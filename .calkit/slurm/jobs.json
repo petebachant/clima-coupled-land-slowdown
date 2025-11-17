@@ -48,7 +48,7 @@
         }
     },
     "mod-integrated-nsys": {
-        "job_id": "135923",
+        "job_id": "135924",
         "deps": [
             "scripts/run-nsys.sh",
             "scripts/run.jl",
@@ -58,7 +58,7 @@
             "ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl"
         ],
         "args": [
-            "results/nsys/baseline-integrated",
+            "results/nsys/mod-integrated",
             "ClimaCoupler.jl-mod/experiments/ClimaEarth",
             "ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly_integrated_land.yml"
         ],
