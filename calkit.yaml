@@ -87,7 +87,7 @@ pipeline:
         - --gpus=1
         - --time=60
       args:
-        - results/nsys/baseline-integrated # Output
+        - results/nsys/mod-integrated # Output
         - ClimaCoupler.jl-mod/experiments/ClimaEarth # Project folder
         - ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly_integrated_land.yml # Config
       inputs:
