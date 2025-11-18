@@ -70,5 +70,29 @@
             "ClimaCoupler.jl-mod/experiments/ClimaEarth/Manifest-v1.11.toml": "057bb49e66938c2bd1b50840f35f15e4",
             "ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl": "6717a8d23dd2a378b1fe42a7c2131079"
         }
+    },
+    "mod-bucket-nsys": {
+        "job_id": "135942",
+        "deps": [
+            "scripts/run-nsys.sh",
+            "scripts/run.jl",
+            "ClimaCoupler.jl-mod/src",
+            "ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly.yml",
+            "ClimaCoupler.jl-mod/experiments/ClimaEarth/Manifest-v1.11.toml",
+            "ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl"
+        ],
+        "args": [
+            "results/nsys/mod-bucket",
+            "ClimaCoupler.jl-mod/experiments/ClimaEarth",
+            "ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly.yml"
+        ],
+        "dep_md5s": {
+            "scripts/run-nsys.sh": "d36f4c26ca500ac13504e3e2fd62ab68",
+            "scripts/run.jl": "95e8d233ab47bbabe59e6437234a2179",
+            "ClimaCoupler.jl-mod/src": "2bc5144a28bc10d8e170e175451b02f0",
+            "ClimaCoupler.jl-mod/config/longrun_configs/amip_edonly.yml": "2bb9ee88715bbe5ea7734bb1062a8832",
+            "ClimaCoupler.jl-mod/experiments/ClimaEarth/Manifest-v1.11.toml": "057bb49e66938c2bd1b50840f35f15e4",
+            "ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl": "6717a8d23dd2a378b1fe42a7c2131079"
+        }
     }
 }
