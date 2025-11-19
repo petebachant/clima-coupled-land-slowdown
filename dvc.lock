@@ -109,8 +109,8 @@ stages:
       size: 27316
     - path: ClimaCoupler.jl-mod/src
       hash: md5
-      md5: db5fc99654dda8de67a9d8976739247e.dir
-      size: 76974
+      md5: cced18693793d049429c1d1fff460893.dir
+      size: 79360
       nfiles: 9
     - path: scripts/run-nsys.sh
       hash: md5
@@ -123,8 +123,8 @@ stages:
     outs:
     - path: results/nsys/mod-integrated.nsys-rep
       hash: md5
-      md5: 1ca6d4297d9bd2b8c155c95757376d9f
-      size: 2096976
+      md5: 690c0c36bb794badacb10c47257e1040
+      size: 2100832
   mod-bucket-nsys:
     cmd: calkit slurm batch --name mod-bucket-nsys --environment clima --dep 
       scripts/run.jl --dep ClimaCoupler.jl-mod/src --dep 
