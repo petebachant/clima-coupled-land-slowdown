@@ -118,13 +118,13 @@ stages:
       size: 1524
     - path: scripts/run.jl
       hash: md5
-      md5: 95e8d233ab47bbabe59e6437234a2179
-      size: 955
+      md5: 16148c814406e77aa8304ee79024783b
+      size: 1131
     outs:
     - path: results/nsys/mod-integrated.nsys-rep
       hash: md5
-      md5: 4ea1ee4a712108f626872f7f054bcb64
-      size: 2106564
+      md5: c0d9279fc5b39491f7d7f2f485aa743c
+      size: 8015376
   mod-bucket-nsys:
     cmd: calkit slurm batch --name mod-bucket-nsys --environment clima --dep 
       scripts/run.jl --dep ClimaCoupler.jl-mod/src --dep 

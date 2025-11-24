@@ -18,16 +18,23 @@ cs = CoupledSimulation(config_file)
 step!(cs)
 
 # Now profile
+n_steps = 5
 use_external_profiler = CUDA.Profile.detect_cupti()
 if use_external_profiler
     @info "Using external CUDA profiler"
     CUDA.@profile external = true begin
-        step!(cs)
+        for i in 1:n_steps
+            @info "Step $i / $n_steps"
+            step!(cs)
+        end
     end
 else
     @info "Using internal CUDA profiler"
     res = CUDA.@profile external = false begin
-        step!(cs)
+        for i in 1:n_steps
+            @info "Step $i / $n_steps"
+            step!(cs)
+        end
     end
     show(IOContext(stdout, :limit => false), res)
 end
