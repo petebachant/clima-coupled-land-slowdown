@@ -4,3 +4,6 @@
 [submodule "ClimaCoupler.jl-mod"]
 	path = ClimaCoupler.jl-mod
 	url = https://github.com/CliMA/ClimaCoupler.jl
+[submodule "ClimaCoupler.jl-js-imp-fluxes"]
+	path = ClimaCoupler.jl-js-imp-fluxes
+	url = https://github.com/CliMA/ClimaCoupler.jl
