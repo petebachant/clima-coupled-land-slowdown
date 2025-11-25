@@ -1,0 +1,97 @@
+Loading climacommon/2025_05_15
+  Loading requirement: climaauth/2025_05_15 openmpi/4.1.5-mpitrampoline
+    julia/1.11.5 cuda/julia-pref
+ERROR: Compat `ClimaOcean` not listed in `deps`, `weakdeps` or `extras` section at "/home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/Project.toml".
+Stacktrace:
+  [1] pkgerror(msg::String)
+    @ Pkg.Types /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/Types.jl:68
+  [2] validate(project::Pkg.Types.Project; file::String)
+    @ Pkg.Types /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/project.jl:150
+  [3] validate
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/project.jl:112 [inlined]
+  [4] Pkg.Types.Project(raw::Dict{String, Any}; file::String)
+    @ Pkg.Types /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/project.jl:180
+  [5] Project
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/project.jl:161 [inlined]
+  [6] read_project(f_or_io::String)
+    @ Pkg.Types /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/project.jl:197
+  [7] Pkg.Types.EnvCache(env::Nothing)
+    @ Pkg.Types /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/Types.jl:354
+  [8] EnvCache
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/Types.jl:351 [inlined]
+  [9] Context
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/Types.jl:401 [inlined]
+ [10] instantiate(; kwargs::@Kwargs{verbose::Bool})
+    @ Pkg.API /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/Pkg/src/API.jl:1171
+ [11] top-level scope
+    @ none:1
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcupti.so.13.1` was loaded from a system path, `/opt/nvidia/nsight-systems/2025.3.2/target-linux-x64/libcupti.so.13.1`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+ERROR: LoadError: ArgumentError: Package ClimaOcean not found in current path.
+- Run `import Pkg; Pkg.add("ClimaOcean")` to install the ClimaOcean package.
+Stacktrace:
+  [1] macro expansion
+    @ ./loading.jl:2296 [inlined]
+  [2] macro expansion
+    @ ./lock.jl:273 [inlined]
+  [3] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+  [4] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+  [5] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+  [6] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+  [7] include(fname::String)
+    @ Main ./sysimg.jl:38
+  [8] top-level scope
+    @ ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl:80
+  [9] include(fname::String)
+    @ Main ./sysimg.jl:38
+ [10] top-level scope
+    @ ~/calkit/clima-coupled-land-slowdown/scripts/run.jl:8
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/components/ocean/oceananigans.jl:2
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl:80
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/scripts/run.jl:8
+Processing events...
+Generated:
+	No reports were generated

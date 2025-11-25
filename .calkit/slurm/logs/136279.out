@@ -1,0 +1,139 @@
+Loading climacommon/2025_05_15
+  Loading requirement: climaauth/2025_05_15 openmpi/4.1.5-mpitrampoline
+    julia/1.11.5 cuda/julia-pref
+Precompiling project...
+   4625.2 ms  ✓ ClimaCoupler
+  1 dependency successfully precompiled in 11 seconds. 617 already precompiled.
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+Status `~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/Project.toml`
+  [c7e460c6] ArgParse v1.2.0
+⌃ [052768ef] CUDA v5.8.5
+⌃ [13f3f980] CairoMakie v0.12.18
+  [29b5916a] ClimaAnalysis v0.5.20
+  [b2c96348] ClimaAtmos v0.31.8
+  [4347a170] ClimaCalibrate v0.1.4
+  [3a4d1b5c] ClimaComms v0.6.10
+  [d414da3d] ClimaCore v0.14.41 `https://github.com/CliMA/ClimaCore.jl#main`
+  [908f55d8] ClimaCoreMakie v0.4.6
+  [4ade58fe] ClimaCoupler v0.1.2 `../..`
+  [1ecacbb8] ClimaDiagnostics v0.2.15
+  [08f4d4ce] ClimaLand v1.0.1
+  [5c42b081] ClimaParams v1.0.3
+⌃ [6ba0ff68] ClimaSeaIce v0.3.9
+  [595c0a79] ClimaTimeSteppers v0.8.5
+  [b3f4f4ca] ClimaUtilities v0.1.27
+  [aa8a2aa5] EnsembleKalmanProcesses v2.6.0
+⌃ [db073c08] GeoMakie v0.7.12
+  [e98cc03f] Insolation v0.10.2
+⌅ [a98d9a8b] Interpolations v0.15.1
+  [033835bb] JLD2 v0.6.2
+  [63c18a36] KernelAbstractions v0.9.39
+⌅ [ee78f7c6] Makie v0.21.18
+  [85f8d34a] NCDatasets v0.14.10
+  [5da4648a] NVTX v1.0.1
+⌅ [9e8cae18] Oceananigans v0.100.7
+⌅ [08abe8d2] PrettyTables v2.4.0
+  [1bc83da4] SafeTestsets v0.1.0
+⌅ [0bca4576] SciMLBase v2.112.0
+  [90137ffa] StaticArrays v1.9.15
+  [49b00bb7] SurfaceFluxes v0.13.1
+  [b60c26fb] Thermodynamics v0.15.0
+⌃ [ddb6d928] YAML v0.4.15
+  [9c32591e] Poppler_jll v24.6.0+0
+Info Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcupti.so.13.1` was loaded from a system path, `/opt/nvidia/nsight-systems/2025.3.2/target-linux-x64/libcupti.so.13.1`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+ERROR: LoadError: ArgumentError: Package ClimaOcean not found in current path.
+- Run `import Pkg; Pkg.add("ClimaOcean")` to install the ClimaOcean package.
+Stacktrace:
+  [1] macro expansion
+    @ ./loading.jl:2296 [inlined]
+  [2] macro expansion
+    @ ./lock.jl:273 [inlined]
+  [3] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+  [4] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+  [5] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+  [6] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+  [7] include(fname::String)
+    @ Main ./sysimg.jl:38
+  [8] top-level scope
+    @ ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl:81
+  [9] include(fname::String)
+    @ Main ./sysimg.jl:38
+ [10] top-level scope
+    @ ~/calkit/clima-coupled-land-slowdown/scripts/run.jl:8
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/components/ocean/clima_seaice.jl:5
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl:81
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/scripts/run.jl:8
+Processing events...
+Generated:
+	No reports were generated

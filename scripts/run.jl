@@ -1,8 +1,11 @@
 # Run the benchmark
 import CUDA
 
-# Load the necessary modules and code to run the coupled simulation
-include("../ClimaCoupler.jl/experiments/ClimaEarth/setup_run.jl")
+# Figure out which project is currently activated and include the setup
+# script
+project_dir = dirname(Base.active_project())
+@info "Active project: $project_dir"
+include(joinpath(project_dir, "setup_run.jl"))
 
 # Get the configuration file from the command line (or manually set it here)
 # For the integrated land model, use:
@@ -18,7 +21,7 @@ cs = CoupledSimulation(config_file)
 step!(cs)
 
 # Now profile
-n_steps = 5
+n_steps = 1
 use_external_profiler = CUDA.Profile.detect_cupti()
 if use_external_profiler
     @info "Using external CUDA profiler"
