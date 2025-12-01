@@ -4,3 +4,9 @@
 [submodule "ClimaCoupler.jl-mod"]
 	path = ClimaCoupler.jl-mod
 	url = https://github.com/CliMA/ClimaCoupler.jl
+[submodule "ClimaCoupler.jl-height-z"]
+	path = ClimaCoupler.jl-height-z
+	url = https://github.com/CliMA/ClimaCoupler.jl.git
+[submodule "ClimaCoupler.jl-imp-fluxes"]
+	path = ClimaCoupler.jl-imp-fluxes
+	url = https://github.com/CliMA/ClimaCoupler.jl

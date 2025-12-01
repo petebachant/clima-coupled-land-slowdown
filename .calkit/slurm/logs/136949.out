@@ -1,0 +1,128 @@
+Loading climacommon/2025_05_15
+  Loading requirement: climaauth/2025_05_15 openmpi/4.1.5-mpitrampoline
+    julia/1.11.5 cuda/julia-pref
+Precompiling project...
+   5210.1 ms  ✓ ClimaCoupler
+  1 dependency successfully precompiled in 16 seconds. 617 already precompiled.
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+Status `~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-height-z/experiments/ClimaEarth/Project.toml`
+  [c7e460c6] ArgParse v1.2.0
+⌃ [052768ef] CUDA v5.8.5
+⌃ [13f3f980] CairoMakie v0.12.18
+  [29b5916a] ClimaAnalysis v0.5.20
+  [b2c96348] ClimaAtmos v0.31.8
+  [4347a170] ClimaCalibrate v0.1.4
+  [3a4d1b5c] ClimaComms v0.6.10
+  [d414da3d] ClimaCore v0.14.41 `https://github.com/CliMA/ClimaCore.jl#main`
+  [908f55d8] ClimaCoreMakie v0.4.6
+  [4ade58fe] ClimaCoupler v0.1.2 `../..`
+  [1ecacbb8] ClimaDiagnostics v0.2.15
+  [08f4d4ce] ClimaLand v1.0.1
+  [5c42b081] ClimaParams v1.0.3
+⌃ [6ba0ff68] ClimaSeaIce v0.3.9
+  [595c0a79] ClimaTimeSteppers v0.8.5
+  [b3f4f4ca] ClimaUtilities v0.1.27
+  [aa8a2aa5] EnsembleKalmanProcesses v2.6.0
+⌃ [db073c08] GeoMakie v0.7.12
+  [e98cc03f] Insolation v0.10.2
+⌅ [a98d9a8b] Interpolations v0.15.1
+  [033835bb] JLD2 v0.6.2
+  [63c18a36] KernelAbstractions v0.9.39
+⌅ [ee78f7c6] Makie v0.21.18
+  [85f8d34a] NCDatasets v0.14.10
+  [5da4648a] NVTX v1.0.1
+⌅ [9e8cae18] Oceananigans v0.100.7
+⌅ [08abe8d2] PrettyTables v2.4.0
+  [1bc83da4] SafeTestsets v0.1.0
+⌅ [0bca4576] SciMLBase v2.112.0
+  [90137ffa] StaticArrays v1.9.15
+  [49b00bb7] SurfaceFluxes v0.13.1
+  [b60c26fb] Thermodynamics v0.15.0
+⌃ [ddb6d928] YAML v0.4.15
+  [9c32591e] Poppler_jll v24.6.0+0
+Info Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcupti.so.13.1` was loaded from a system path, `/opt/nvidia/nsight-systems/2025.3.2/target-linux-x64/libcupti.so.13.1`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+[ Info: Active project: /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-height-z/experiments/ClimaEarth
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+[ Info: Using Atmos configuration from ClimaCoupler in config/atmos_configs/climaatmos_edonly.yml
+[ Info: Setting up single-process ClimaCoupler run on device: CUDADevice.
+[ Info: Dict{Any, Any}("sleve_eta" => 0.7, "surface_thermo_state_type" => "GCMSurfaceThermoState", "use_coupler_diagnostics" => true, "era5_diurnal_warming" => nothing, "dt" => "120secs", "prognostic_tke" => false, "use_newton_rtol" => false, "netcdf_output_at_levels" => true, "output_dir_style" => "ActiveLink", "external_forcing" => nothing, "device" => "auto", "t_end" => "366days", "c_amd" => 0.29, "y_elem" => 6, "z_stretch" => true, "extra_atmos_diagnostics" => Dict{Any, Any}[], "forcing" => nothing, "edmfx_nh_pressure" => false, "era5_initial_condition_dir" => nothing, "conservation_softfail" => false, "check_steady_state" => false, "restart_cache" => true, "update_jacobian_every" => "solve", "test_dycore_consistency" => false, "add_isothermal_boundary_layer" => true, "use_itime" => true, "moist" => "equil", "rad" => "allskywithclear", "share_surface_space" => true, "cloud_model" => "quadrature", "initial_condition" => "DecayingProfile", "krylov_rtol" => 0.1, "eisenstat_walker_forcing_alpha" => 2.0, "dt_cloud_fraction" => "1hours", "surface_setup" => "PrescribedSurface", "jvp_step_adjustment" => 1.0, "insolation" => "timevarying", "log_progress" => true, "site_latitude" => 17.0, "h_elem" => 16, "implicit_sgs_nh_pressure" => false, "coupler_toml" => String[], "netcdf_interpolation_num_points" => nothing, "coupler_output_dir" => "experiments/ClimaEarth/output", "z_max" => 60000.0, "apply_limiter" => false, "precip_model" => "0M", "surface_temperature" => "ZonallySymmetric", "debug_jacobian" => false, "edmfx_filter" => false, "job_id" => "amip_edonly_integrated_land", "log_to_file" => false, "orographic_gravity_wave" => nothing, "dt_rad" => "1hours", "tracer_upwinding" => "vanleer_limiter", "nh_poly" => 3, "edmfx_sgs_diffusive_flux" => true, "y_max" => 300000.0, "non_orographic_gravity_wave" => false, "print_config_dict" => true, "topography_damping_factor" => 5, "config" => "sphere", "reproducibility_test" => false, "component_dt_dict" => Dict("dt_atmos" => 120.0, "dt_land" => 120.0, "dt_seaice" => 120.0, "dt_ocean" => 120.0), "check_conservation" => false, "rmse_check" => true, "land_spun_up_ic" => true, "auto_jacobian_padding_bands" => nothing, "implicit_diffusion" => true, "z_elem" => 63, "implicit_sgs_entr_detr" => false, "use_auto_jacobian" => false, "disable_surface_flux_tendency" => false, "cfsite_number" => "site23", "turbconv" => "edonly_edmfx", "x_elem" => 6, "idealized_clouds" => false, "edmfx_mse_q_tot_upwinding" => "first_order", "check_nan_every" => 1024, "subsidence" => nothing, "use_dynamic_krylov_rtol" => false, "toml" => ["toml/longrun_aquaplanet.toml"], "mesh_warp_type" => "SLEVE", "edmfx_detr_model" => nothing, "external_forcing_file" => nothing, "topo_smoothing" => true, "hyperdiff" => "CAM_SE", "output_dir" => nothing, "scm_coriolis" => nothing, "bubble" => false, "co2_model" => "maunaloa", "ode_algo" => "ARS343", "max_newton_iters_ode" => 1, "start_date" => "20100101", "use_dense_jacobian" => false, "implicit_noneq_cloud_formation" => false, "scalar_hyperdiffusion_coefficient" => 0.929738, "prognostic_surface" => "false", "detect_restart_file" => false, "edmfx_vertical_diffusion" => false, "restart_file" => nothing, "unique_seed" => false, "rayleigh_sponge" => true, "edmfx_tracer_upwinding" => "first_order", "divergence_damping_factor" => 5.0, "edmfx_entr_model" => nothing, "energy_check" => false, "land_model" => "integrated", "use_land_diagnostics" => true, "idealized_h2o" => false, "perturb_initstate" => true, "implicit_sgs_advection" => false, "edmfx_scale_blending" => "SmoothMinimum", "discrete_hydrostatic_balance" => false, "t_start" => "0secs", "netcdf_interpolate_z_over_msl" => true, "dz_bottom" => 30.0, "dt_save_state_to_disk" => "30days", "restart_t" => nothing, "advection_test" => false, "dt_cpl" => "120secs", "checkpoint_dt" => "31days", "topography" => "Earth", "aerosol_radiation" => true, "reference_job_id" => nothing, "perf_summary" => false, "vorticity_hyperdiffusion_coefficient" => 0.1857, "implicit_sgs_mass_flux" => false, "call_cloud_diagnostics_per_stage" => false, "viscous_sponge" => true, "config_file" => "ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml", "bucket_initial_condition" => "", "approximate_linear_solve_iters" => 2, "smagorinsky_lilly" => nothing, "enable_diagnostics" => true, "site_longitude" => -149.0, "evolving_ocean" => true, "implicit_sgs_vertdiff" => false, "prescribe_clouds_in_radiation" => false, "albedo_model" => "CouplerAlbedo", "FLOAT_TYPE" => "Float32", "deep_atmosphere" => true, "split_ode" => true, "amd_les" => false, "prescribe_ozone" => true, "updraft_number" => 1, "restart_dir" => nothing, "detect_restart_files" => false, "ls_adv" => nothing, "energy_q_tot_upwinding" => "vanleer_limiter", "prescribed_aerosols" => ["CB1", "CB2", "DST01", "OC1", "OC2", "SO4", "SSLT01"], "dt_nogw" => "1800secs", "output_default_diagnostics" => true, "edmfx_sgs_mass_flux" => false, "x_max" => 300000.0, "radiation_reset_rng_seed" => false, "newton_rtol" => 1.0e-5, "atmos_config_file" => "config/atmos_configs/climaatmos_edonly.yml", "edmfx_sgsflux_upwinding" => "none", "mode_name" => "amip", "land_temperature_anomaly" => "aquaplanet", "bucket_albedo_type" => "map_static", "vert_diff" => "false", "use_krylov_method" => false, "sleve_s" => 10.0)
+ERROR: LoadError: type NamedTuple has no field ice_model
+Stacktrace:
+ [1] getproperty
+   @ ./Base.jl:49 [inlined]
+ [2] CoupledSimulation(config_dict::Dict{Any, Any})
+   @ Main ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl:117
+ [3] CoupledSimulation(config_file::String)
+   @ Main ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl:110
+ [4] top-level scope
+   @ ~/calkit/clima-coupled-land-slowdown/scripts/run.jl:18
+in expression starting at /home/pbachant/calkit/clima-coupled-land-slowdown/scripts/run.jl:18
+Processing events...
+Generated:
+	No reports were generated

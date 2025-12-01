@@ -90,3 +90,56 @@ stages:
           persist: true
     desc: Automatically generated from the 'mod-integrated-nsys' stage
       in calkit.yaml. Changes made here will be overwritten.
+  height-z-integrated-nsys:
+    cmd: calkit slurm batch --name height-z-integrated-nsys 
+      --environment clima --dep scripts/run.jl --dep 
+      ClimaCoupler.jl-height-z/src --dep 
+      ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+      --dep 
+      ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml
+      --dep 
+      ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl 
+      --out results/nsys/height-z-integrated.nsys-rep -s --gpus=1 -s 
+      --time=60 -- scripts/run-nsys.sh 
+      results/nsys/height-z-integrated 
+      ClimaCoupler.jl-height-z/experiments/ClimaEarth 
+      ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+    deps:
+      - scripts/run-nsys.sh
+      - scripts/run.jl
+      - ClimaCoupler.jl-height-z/src
+      - ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+      - ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml
+      - ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl
+    outs:
+      - results/nsys/height-z-integrated.nsys-rep:
+          persist: true
+    desc: Automatically generated from the 'height-z-integrated-nsys' 
+      stage in calkit.yaml. Changes made here will be overwritten.
+  imp-fluxes-integrated-nsys:
+    cmd: calkit slurm batch --name imp-fluxes-integrated-nsys 
+      --environment clima --dep scripts/run.jl --dep 
+      ClimaCoupler.jl-imp-fluxes/src --dep 
+      ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+      --dep 
+      ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml
+      --dep 
+      ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl 
+      --out results/nsys/imp-fluxes-integrated.nsys-rep -s --gpus=1 -s
+      --time=60 -- scripts/run-nsys.sh 
+      results/nsys/imp-fluxes-integrated 
+      ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth 
+      ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+    deps:
+      - scripts/run-nsys.sh
+      - scripts/run.jl
+      - ClimaCoupler.jl-imp-fluxes/src
+      - ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+      - ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml
+      - ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl
+    outs:
+      - results/nsys/imp-fluxes-integrated.nsys-rep:
+          persist: true
+    desc: Automatically generated from the 
+      'imp-fluxes-integrated-nsys' stage in calkit.yaml. Changes made 
+      here will be overwritten.

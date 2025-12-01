@@ -117,6 +117,44 @@ pipeline:
         - ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl
       outputs:
         - results/nsys/mod-integrated.nsys-rep
+    height-z-integrated-nsys:
+      kind: sbatch
+      environment: clima
+      script_path: scripts/run-nsys.sh
+      sbatch_options:
+        - --gpus=1
+        - --time=60
+      args:
+        - results/nsys/height-z-integrated # Output
+        - ClimaCoupler.jl-height-z/experiments/ClimaEarth # Project folder
+        - ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml # Config
+      inputs:
+        - scripts/run.jl
+        - ClimaCoupler.jl-height-z/src
+        - ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+        - ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml
+        - ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl
+      outputs:
+        - results/nsys/height-z-integrated.nsys-rep
+    imp-fluxes-integrated-nsys:
+      kind: sbatch
+      environment: clima
+      script_path: scripts/run-nsys.sh
+      sbatch_options:
+        - --gpus=1
+        - --time=60
+      args:
+        - results/nsys/imp-fluxes-integrated # Output
+        - ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth # Project folder
+        - ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml # Config
+      inputs:
+        - scripts/run.jl
+        - ClimaCoupler.jl-imp-fluxes/src
+        - ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+        - ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml
+        - ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl
+      outputs:
+        - results/nsys/imp-fluxes-integrated.nsys-rep
     # amip-clima-ncu:
     #   kind: sbatch
     #   environment: clima

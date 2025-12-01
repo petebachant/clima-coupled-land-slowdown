@@ -166,3 +166,89 @@ stages:
       hash: md5
       md5: 7e76acf0365ba1cb2f558c06e55b107b
       size: 1200916
+  height-z-integrated-nsys:
+    cmd: calkit slurm batch --name height-z-integrated-nsys --environment clima 
+      --dep scripts/run.jl --dep ClimaCoupler.jl-height-z/src --dep 
+      ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+      --dep ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml 
+      --dep ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl --out 
+      results/nsys/height-z-integrated.nsys-rep -s --gpus=1 -s --time=60 -- 
+      scripts/run-nsys.sh results/nsys/height-z-integrated 
+      ClimaCoupler.jl-height-z/experiments/ClimaEarth 
+      ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+    deps:
+    - path: 
+        ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml
+      hash: md5
+      md5: 1775fefe23e5809ae9de5f0fd4a6a0fc
+      size: 619
+    - path: ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml
+      hash: md5
+      md5: c2fd0e237d7be787bdddcf7b3a141702
+      size: 129881
+    - path: ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl
+      hash: md5
+      md5: b87b8be8d529c2050bfdc77e350775b1
+      size: 27987
+    - path: ClimaCoupler.jl-height-z/src
+      hash: md5
+      md5: 154c4893781cb103ca34a86fa41b468c.dir
+      size: 80149
+      nfiles: 9
+    - path: scripts/run-nsys.sh
+      hash: md5
+      md5: d36f4c26ca500ac13504e3e2fd62ab68
+      size: 1524
+    - path: scripts/run.jl
+      hash: md5
+      md5: 4a767e82565d25c32cc513e7051ed8dd
+      size: 1207
+    outs:
+    - path: results/nsys/height-z-integrated.nsys-rep
+      hash: md5
+      md5: b6bd1d6316e09643325893f617f51ed5
+      size: 1907612
+  imp-fluxes-integrated-nsys:
+    cmd: calkit slurm batch --name imp-fluxes-integrated-nsys --environment 
+      clima --dep scripts/run.jl --dep ClimaCoupler.jl-imp-fluxes/src --dep 
+      ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+      --dep 
+      ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml 
+      --dep ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl --out
+      results/nsys/imp-fluxes-integrated.nsys-rep -s --gpus=1 -s --time=60 -- 
+      scripts/run-nsys.sh results/nsys/imp-fluxes-integrated 
+      ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth 
+      ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+    deps:
+    - path: 
+        ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml
+      hash: md5
+      md5: 1775fefe23e5809ae9de5f0fd4a6a0fc
+      size: 619
+    - path: 
+        ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml
+      hash: md5
+      md5: e5946460f59fd42f5bfff87087f88f31
+      size: 129898
+    - path: ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl
+      hash: md5
+      md5: b87b8be8d529c2050bfdc77e350775b1
+      size: 27987
+    - path: ClimaCoupler.jl-imp-fluxes/src
+      hash: md5
+      md5: ba742f41be96bcdca547dba7368935d4.dir
+      size: 81934
+      nfiles: 9
+    - path: scripts/run-nsys.sh
+      hash: md5
+      md5: d36f4c26ca500ac13504e3e2fd62ab68
+      size: 1524
+    - path: scripts/run.jl
+      hash: md5
+      md5: 4a767e82565d25c32cc513e7051ed8dd
+      size: 1207
+    outs:
+    - path: results/nsys/imp-fluxes-integrated.nsys-rep
+      hash: md5
+      md5: 88e3194835073a33d7034b26d246c085
+      size: 2081689

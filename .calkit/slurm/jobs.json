@@ -94,5 +94,53 @@
             "ClimaCoupler.jl-mod/experiments/ClimaEarth/Manifest-v1.11.toml": "057bb49e66938c2bd1b50840f35f15e4",
             "ClimaCoupler.jl-mod/experiments/ClimaEarth/setup_run.jl": "6717a8d23dd2a378b1fe42a7c2131079"
         }
+    },
+    "height-z-integrated-nsys": {
+        "job_id": "136955",
+        "deps": [
+            "scripts/run-nsys.sh",
+            "scripts/run.jl",
+            "ClimaCoupler.jl-height-z/src",
+            "ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml",
+            "ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml",
+            "ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl"
+        ],
+        "args": [
+            "results/nsys/height-z-integrated",
+            "ClimaCoupler.jl-height-z/experiments/ClimaEarth",
+            "ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml"
+        ],
+        "dep_md5s": {
+            "scripts/run-nsys.sh": "d36f4c26ca500ac13504e3e2fd62ab68",
+            "scripts/run.jl": "4a767e82565d25c32cc513e7051ed8dd",
+            "ClimaCoupler.jl-height-z/src": "33c43c775be278114d854d7967bc2b31",
+            "ClimaCoupler.jl-height-z/config/longrun_configs/amip_edonly_integrated_land.yml": "1775fefe23e5809ae9de5f0fd4a6a0fc",
+            "ClimaCoupler.jl-height-z/experiments/ClimaEarth/Manifest-v1.11.toml": "c2fd0e237d7be787bdddcf7b3a141702",
+            "ClimaCoupler.jl-height-z/experiments/ClimaEarth/setup_run.jl": "b87b8be8d529c2050bfdc77e350775b1"
+        }
+    },
+    "imp-fluxes-integrated-nsys": {
+        "job_id": "136956",
+        "deps": [
+            "scripts/run-nsys.sh",
+            "scripts/run.jl",
+            "ClimaCoupler.jl-imp-fluxes/src",
+            "ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml",
+            "ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml",
+            "ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl"
+        ],
+        "args": [
+            "results/nsys/imp-fluxes-integrated",
+            "ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth",
+            "ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml"
+        ],
+        "dep_md5s": {
+            "scripts/run-nsys.sh": "d36f4c26ca500ac13504e3e2fd62ab68",
+            "scripts/run.jl": "4a767e82565d25c32cc513e7051ed8dd",
+            "ClimaCoupler.jl-imp-fluxes/src": "540f3b0c64225d2c5d5058c83548e2dc",
+            "ClimaCoupler.jl-imp-fluxes/config/longrun_configs/amip_edonly_integrated_land.yml": "1775fefe23e5809ae9de5f0fd4a6a0fc",
+            "ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/Manifest-v1.11.toml": "e5946460f59fd42f5bfff87087f88f31",
+            "ClimaCoupler.jl-imp-fluxes/experiments/ClimaEarth/setup_run.jl": "b87b8be8d529c2050bfdc77e350775b1"
+        }
     }
 }
