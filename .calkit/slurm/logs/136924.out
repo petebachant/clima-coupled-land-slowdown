@@ -1,0 +1,1195 @@
+Loading climacommon/2025_05_15
+  Loading requirement: climaauth/2025_05_15 openmpi/4.1.5-mpitrampoline
+    julia/1.11.5 cuda/julia-pref
+Precompiling project...
+           ✗ DataDeps
+           ✗ FileIO → HTTPExt
+  13867.7 ms  ✓ DiffEqBase → DiffEqBaseMPIExt
+           ✗ MeshArrays → MeshArraysDataDepsExt
+  31879.7 ms  ✓ ClimaCore
+  27310.7 ms  ✓ ClimaCalibrate → ClimaAnalysisExt
+  17263.7 ms  ✓ ClimaCore → KrylovExt
+  17812.3 ms  ✓ ClimaUtilities → ClimaUtilitiesClimaCoreExt
+  42199.8 ms  ✓ ClimaAnalysis → ClimaAnalysisGeoMakieExt
+  42762.6 ms  ✓ ClimaAnalysis → ClimaAnalysisMakieExt
+  19173.7 ms  ✓ ClimaUtilities → ClimaUtilitiesClimaCoreNCDatasetsExt
+  19547.7 ms  ✓ ClimaUtilities → ClimaUtilitiesClimaCoreInterpolationsExt
+  22447.2 ms  ✓ ClimaCoupler
+  23384.9 ms  ✓ ClimaDiagnostics
+  46762.6 ms  ✓ ClimaCoreMakie
+  77077.9 ms  ✓ Oceananigans
+  17015.9 ms  ✓ Oceananigans → OceananigansNCDatasetsExt
+  21343.3 ms  ✓ ClimaSeaIce
+  32528.6 ms  ✓ ClimaLand
+  36670.1 ms  ✓ Oceananigans → OceananigansMakieExt
+  45161.9 ms  ✓ ClimaAtmos
+  19103.4 ms  ✓ ClimaLand → FluxnetSimulationsExt
+ 139888.4 ms  ✓ CUDA
+  52006.0 ms  ✓ ClimaLand → LandSimulationVisualizationExt
+  53905.4 ms  ✓ ArrayInterface → ArrayInterfaceCUDAExt
+  60209.1 ms  ✓ MultiBroadcastFusion → MultiBroadcastFusionCUDAExt
+  65419.2 ms  ✓ CUDA → ChainRulesCoreExt
+  64727.6 ms  ✓ Atomix → AtomixCUDAExt
+  64419.8 ms  ✓ MPI → CUDAExt
+  64786.7 ms  ✓ RRTMGP → RRTMGPCUDAExt
+  65726.1 ms  ✓ ClimaInterpolations → ClimaInterpolationsCUDAExt
+  64281.1 ms  ✓ ClimaTimeSteppers → ClimaTimeSteppersBenchmarkToolsExt
+  65708.4 ms  ✓ LinearOperators → LinearOperatorsCUDAExt
+  65668.6 ms  ✓ SparseMatrixColorings → SparseMatrixColoringsCUDAExt
+  66569.4 ms  ✓ CUDA → SpecialFunctionsExt
+  65074.2 ms  ✓ DiffEqBase → DiffEqBaseCUDAExt
+  66506.8 ms  ✓ CUDA → EnzymeCoreExt
+  65666.6 ms  ✓ KrylovPreconditioners → KrylovPreconditionersCUDAExt
+  66420.1 ms  ✓ ClimaComms → ClimaCommsCUDAExt
+  50776.3 ms  ✓ ClimaCore → ClimaCoreCUDAExt
+  18153.5 ms  ✓ Oceananigans → OceananigansCUDAExt
+           ✗ ClimaOcean
+  38 dependencies successfully precompiled in 230 seconds. 605 already precompiled.
+  20 dependencies had output during precompilation:
+┌ ArrayInterface → ArrayInterfaceCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ LinearOperators → LinearOperatorsCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ Oceananigans → OceananigansMakieExt
+│  ┌ Warning: You are using Julia v1.11 or later!"
+│  │ Oceananigans is currently tested on Julia v1.10."
+│  │ If you find issues with Julia v1.11 or later,"
+│  │ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+│  └ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+└  
+┌ ClimaCore → ClimaCoreCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ ClimaInterpolations → ClimaInterpolationsCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ ClimaTimeSteppers → ClimaTimeSteppersBenchmarkToolsExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ Oceananigans → OceananigansNCDatasetsExt
+│  ┌ Warning: You are using Julia v1.11 or later!"
+│  │ Oceananigans is currently tested on Julia v1.10."
+│  │ If you find issues with Julia v1.11 or later,"
+│  │ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+│  └ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+└  
+┌ Atomix → AtomixCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ MultiBroadcastFusion → MultiBroadcastFusionCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ CUDA → ChainRulesCoreExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ CUDA → SpecialFunctionsExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ CUDA → EnzymeCoreExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ DiffEqBase → DiffEqBaseCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ ClimaSeaIce
+│  ┌ Warning: You are using Julia v1.11 or later!"
+│  │ Oceananigans is currently tested on Julia v1.10."
+│  │ If you find issues with Julia v1.11 or later,"
+│  │ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+│  └ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+└  
+┌ KrylovPreconditioners → KrylovPreconditionersCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ RRTMGP → RRTMGPCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ MPI → CUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ ClimaComms → ClimaCommsCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ SparseMatrixColorings → SparseMatrixColoringsCUDAExt
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+┌ Oceananigans → OceananigansCUDAExt
+│  ┌ Warning: You are using Julia v1.11 or later!"
+│  │ Oceananigans is currently tested on Julia v1.10."
+│  │ If you find issues with Julia v1.11 or later,"
+│  │ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+│  └ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+│  ┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+│  ┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│  │ This may cause errors.
+│  │ 
+│  │ If you're running under a profiler, this situation is expected. Otherwise,
+│  │ ensure that your library path environment variable (e.g., `PATH` on Windows
+│  │ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│  │ 
+│  │ In any other case, please file an issue.
+│  └ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+└  
+
+The following 1 direct dependency failed to precompile:
+
+ClimaOcean 
+
+Failed to precompile ClimaOcean [0376089a-ecfe-4b0e-a64f-9c555d74d754] to "/home/pbachant/.julia/compiled/v1.11/ClimaOcean/jl_sCM5Nk".
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+ERROR: LoadError: InitError: AssertionError: ret == 1
+Stacktrace:
+  [1] OpenSSL.SSLContext(ssl_method::OpenSSL.SSLMethod, verify_file::String)
+    @ OpenSSL ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:165
+  [2] SSLContext
+    @ ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:145 [inlined]
+  [3] __init__()
+    @ HTTP.Connections ~/.julia/packages/HTTP/ShTJs/src/Connections.jl:41
+  [4] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1378
+  [5] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1366
+  [6] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}, ignore_native::Nothing; register::Bool)
+    @ Base ./loading.jl:1254
+  [7] _include_from_serialized (repeats 2 times)
+    @ ./loading.jl:1210 [inlined]
+  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2057
+  [9] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2527
+ [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [11] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [12] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [14] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [15] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [16] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [17] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [18] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [19] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [20] include
+    @ ./Base.jl:557 [inlined]
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2881
+ [22] top-level scope
+    @ stdin:6
+during initialization of module Connections
+in expression starting at /home/pbachant/.julia/packages/DataDeps/Y2lje/src/DataDeps.jl:2
+in expression starting at stdin:6
+ERROR: LoadError: Failed to precompile DataDeps [124859b0-ceae-595e-8997-d05f6a7a8dfe] to "/home/pbachant/.julia/compiled/v1.11/DataDeps/jl_rRLWBV".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3174
+  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+    @ Base ./loading.jl:2579
+  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
+  [5] #mkpidlock#6
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
+  [7] #invokelatest#2
+    @ ./essentials.jl:1057 [inlined]
+  [8] invokelatest
+    @ ./essentials.jl:1052 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3698
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3695 [inlined]
+ [11] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2565
+ [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [13] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [14] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [16] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [17] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [18] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [19] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [20] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [21] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [22] include
+    @ ./Base.jl:557 [inlined]
+ [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [24] top-level scope
+    @ stdin:6
+in expression starting at /home/pbachant/.julia/packages/ClimaOcean/5Dct7/src/ClimaOcean.jl:1
+in expression starting at stdin:Precompiling project...
+           ✗ DataDeps
+           ✗ FileIO → HTTPExt
+           ✗ MeshArrays → MeshArraysDataDepsExt
+           ✗ ClimaOcean
+  0 dependencies successfully precompiled in 17 seconds. 643 already precompiled.
+
+ERROR: The following 4 dependencies failed to precompile:
+
+DataDeps 
+
+Failed to precompile DataDeps [124859b0-ceae-595e-8997-d05f6a7a8dfe] to "/home/pbachant/.julia/compiled/v1.11/DataDeps/jl_C1doKO".
+ERROR: LoadError: InitError: AssertionError: ret == 1
+Stacktrace:
+  [1] OpenSSL.SSLContext(ssl_method::OpenSSL.SSLMethod, verify_file::String)
+    @ OpenSSL ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:165
+  [2] SSLContext
+    @ ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:145 [inlined]
+  [3] __init__()
+    @ HTTP.Connections ~/.julia/packages/HTTP/ShTJs/src/Connections.jl:41
+  [4] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1378
+  [5] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1366
+  [6] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}, ignore_native::Nothing; register::Bool)
+    @ Base ./loading.jl:1254
+  [7] _include_from_serialized (repeats 2 times)
+    @ ./loading.jl:1210 [inlined]
+  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2057
+  [9] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2527
+ [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [11] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [12] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [14] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [15] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [16] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [17] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [18] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [19] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [20] include
+    @ ./Base.jl:557 [inlined]
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [22] top-level scope
+    @ stdin:6
+during initialization of module Connections
+in expression starting at /home/pbachant/.julia/packages/DataDeps/Y2lje/src/DataDeps.jl:2
+in expression starting at stdin:6
+HTTPExt 
+
+Failed to precompile HTTPExt [d96af470-7dec-5786-bf74-32dbc175f043] to "/home/pbachant/.julia/compiled/v1.11/HTTPExt/jl_jrLpTv".
+ERROR: LoadError: InitError: AssertionError: ret == 1
+Stacktrace:
+  [1] OpenSSL.SSLContext(ssl_method::OpenSSL.SSLMethod, verify_file::String)
+    @ OpenSSL ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:165
+  [2] SSLContext
+    @ ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:145 [inlined]
+  [3] __init__()
+    @ HTTP.Connections ~/.julia/packages/HTTP/ShTJs/src/Connections.jl:41
+  [4] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1378
+  [5] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1366
+  [6] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}, ignore_native::Nothing; register::Bool)
+    @ Base ./loading.jl:1254
+  [7] _include_from_serialized (repeats 2 times)
+    @ ./loading.jl:1210 [inlined]
+  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2057
+  [9] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2527
+ [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [11] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [12] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [14] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [15] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [16] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [17] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [18] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [19] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [20] top-level scope
+    @ ~/.julia/packages/FileIO/EI2b8/ext/HTTPExt.jl:5
+ [21] include
+    @ ./Base.jl:557 [inlined]
+ [22] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [23] top-level scope
+    @ stdin:6
+during initialization of module Connections
+in expression starting at /home/pbachant/.julia/packages/FileIO/EI2b8/ext/HTTPExt.jl:1
+in expression starting at stdin:6
+
+ClimaOcean 
+
+Failed to precompile ClimaOcean [0376089a-ecfe-4b0e-a64f-9c555d74d754] to "/home/pbachant/.julia/compiled/v1.11/ClimaOcean/jl_jfCa9y".
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+ERROR: LoadError: InitError: AssertionError: ret == 1
+Stacktrace:
+  [1] OpenSSL.SSLContext(ssl_method::OpenSSL.SSLMethod, verify_file::String)
+    @ OpenSSL ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:165
+  [2] SSLContext
+    @ ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:145 [inlined]
+  [3] __init__()
+    @ HTTP.Connections ~/.julia/packages/HTTP/ShTJs/src/Connections.jl:41
+  [4] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1378
+  [5] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1366
+  [6] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}, ignore_native::Nothing; register::Bool)
+    @ Base ./loading.jl:1254
+  [7] _include_from_serialized (repeats 2 times)
+    @ ./loading.jl:1210 [inlined]
+  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2057
+  [9] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2527
+ [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [11] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [12] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [14] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [15] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [16] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [17] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [18] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [19] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [20] include
+    @ ./Base.jl:557 [inlined]
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2881
+ [22] top-level scope
+    @ stdin:6
+during initialization of module Connections
+in expression starting at /home/pbachant/.julia/packages/DataDeps/Y2lje/src/DataDeps.jl:2
+in expression starting at stdin:6
+ERROR: LoadError: Failed to precompile DataDeps [124859b0-ceae-595e-8997-d05f6a7a8dfe] to "/home/pbachant/.julia/compiled/v1.11/DataDeps/jl_mOqCpG".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3174
+  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+    @ Base ./loading.jl:2579
+  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
+  [5] #mkpidlock#6
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
+  [7] #invokelatest#2
+    @ ./essentials.jl:1057 [inlined]
+  [8] invokelatest
+    @ ./essentials.jl:1052 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3698
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3695 [inlined]
+ [11] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2565
+ [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [13] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [14] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [16] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [17] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [18] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [19] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [20] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [21] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [22] include
+    @ ./Base.jl:557 [inlined]
+ [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [24] top-level scope
+    @ stdin:6
+in expression starting at /home/pbachant/.julia/packages/ClimaOcean/5Dct7/src/ClimaOcean.jl:1
+in expression starting at stdin:6
+
+MeshArraysDataDepsExt 
+
+Failed to precompile MeshArraysDataDepsExt [36cc4853-f8c1-5eaa-8d8b-0a67786dd994] to "/home/pbachant/.julia/compiled/v1.11/MeshArraysDataDepsExt/jl_tGNbDZ".
+ERROR: LoadError: InitError: AssertionError: ret == 1
+Stacktrace:
+  [1] OpenSSL.SSLContext(ssl_method::OpenSSL.SSLMethod, verify_file::String)
+    @ OpenSSL ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:165
+  [2] SSLContext
+    @ ~/.julia/packages/OpenSSL/fun1x/src/ssl.jl:145 [inlined]
+  [3] __init__()
+    @ HTTP.Connections ~/.julia/packages/HTTP/ShTJs/src/Connections.jl:41
+  [4] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1378
+  [5] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1366
+  [6] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}, ignore_native::Nothing; register::Bool)
+    @ Base ./loading.jl:1254
+  [7] _include_from_serialized (repeats 2 times)
+    @ ./loading.jl:1210 [inlined]
+  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2057
+  [9] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2527
+ [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [11] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [12] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [14] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [15] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [16] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [17] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [18] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [19] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [20] include
+    @ ./Base.jl:557 [inlined]
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2881
+ [22] top-level scope
+    @ stdin:6
+during initialization of module Connections
+in expression starting at /home/pbachant/.julia/packages/DataDeps/Y2lje/src/DataDeps.jl:2
+in expression starting at stdin:6
+ERROR: LoadError: Failed to precompile DataDeps [124859b0-ceae-595e-8997-d05f6a7a8dfe] to "/home/pbachant/.julia/compiled/v1.11/DataDeps/jl_gsC5L6".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3174
+  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+    @ Base ./loading.jl:2579
+  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
+  [5] #mkpidlock#6
+    @ /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /clima/software/julia/julia-1.11.5/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
+  [7] #invokelatest#2
+    @ ./essentials.jl:1057 [inlined]
+  [8] invokelatest
+    @ ./essentials.jl:1052 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3698
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3695 [inlined]
+ [11] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2565
+ [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [13] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [14] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [16] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [17] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [18] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [19] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [20] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [21] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [22] include
+    @ ./Base.jl:557 [inlined]
+ [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [24] top-level scope
+    @ stdin:6
+in expression starting at /home/pbachant/.julia/packages/MeshArrays/3lJCP/ext/MeshArraysDataDepsExt.jl:2
+in expression starting at stdin:6
+┌ Warning: CUDA runtime library `libcublasLt.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libcublasLt.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libnvJitLink.so.13` was loaded from a system path, `/usr/local/cuda/lib64/libnvJitLink.so.13`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcusparse.so.12` was loaded from a system path, `/usr/local/cuda/lib64/libcusparse.so.12`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+┌ Warning: CUDA runtime library `libcupti.so.13.1` was loaded from a system path, `/opt/nvidia/nsight-systems/2025.3.2/target-linux-x64/libcupti.so.13.1`.
+│ This may cause errors.
+│ 
+│ If you're running under a profiler, this situation is expected. Otherwise,
+│ ensure that your library path environment variable (e.g., `PATH` on Windows
+│ or `LD_LIBRARY_PATH` on Linux) does not include CUDA library paths.
+│ 
+│ In any other case, please file an issue.
+└ @ CUDA ~/.julia/packages/CUDA/TPbi4/src/initialization.jl:218
+[ Info: Active project: /home/pbachant/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl/experiments/ClimaEarth
+┌ Warning: You are using Julia v1.11 or later!"
+│ Oceananigans is currently tested on Julia v1.10."
+│ If you find issues with Julia v1.11 or later,"
+│ please report at https://github.com/CliMA/Oceananigans.jl/issues/new
+└ @ Oceananigans ~/.julia/packages/Oceananigans/A56vm/src/Oceananigans.jl:125
+[ Info: Using Atmos configuration from ClimaCoupler in config/atmos_configs/climaatmos_edonly.yml
+[ Info: Setting up single-process ClimaCoupler run on device: CUDADevice.
+[ Info: Dict{Any, Any}("sleve_eta" => 0.7, "surface_thermo_state_type" => "GCMSurfaceThermoState", "use_coupler_diagnostics" => true, "era5_diurnal_warming" => nothing, "dt" => "120secs", "prognostic_tke" => false, "use_newton_rtol" => false, "netcdf_output_at_levels" => true, "output_dir_style" => "ActiveLink", "external_forcing" => nothing, "device" => "auto", "t_end" => "366days", "c_amd" => 0.29, "y_elem" => 6, "z_stretch" => true, "extra_atmos_diagnostics" => Dict{Any, Any}[], "forcing" => nothing, "edmfx_nh_pressure" => false, "era5_initial_condition_dir" => nothing, "conservation_softfail" => false, "check_steady_state" => false, "restart_cache" => true, "update_jacobian_every" => "solve", "test_dycore_consistency" => false, "add_isothermal_boundary_layer" => true, "use_itime" => true, "moist" => "equil", "rad" => "allskywithclear", "share_surface_space" => true, "cloud_model" => "quadrature", "initial_condition" => "DecayingProfile", "krylov_rtol" => 0.1, "eisenstat_walker_forcing_alpha" => 2.0, "dt_cloud_fraction" => "1hours", "surface_setup" => "PrescribedSurface", "jvp_step_adjustment" => 1.0, "insolation" => "timevarying", "log_progress" => true, "site_latitude" => 17.0, "h_elem" => 16, "implicit_sgs_nh_pressure" => false, "coupler_toml" => String[], "netcdf_interpolation_num_points" => nothing, "coupler_output_dir" => "experiments/ClimaEarth/output", "z_max" => 60000.0, "moisture_fixer" => false, "apply_limiter" => false, "precip_model" => "0M", "surface_temperature" => "ZonallySymmetric", "debug_jacobian" => false, "edmfx_filter" => false, "job_id" => "amip_edonly_integrated_land", "log_to_file" => false, "orographic_gravity_wave" => nothing, "dt_rad" => "1hours", "tracer_upwinding" => "vanleer_limiter", "nh_poly" => 3, "edmfx_sgs_diffusive_flux" => true, "y_max" => 300000.0, "non_orographic_gravity_wave" => false, "print_config_dict" => true, "topography_damping_factor" => 5, "config" => "sphere", "reproducibility_test" => false, "component_dt_dict" => Dict("dt_atmos" => 120.0, "dt_land" => 120.0, "dt_seaice" => 120.0, "dt_ocean" => 120.0), "check_conservation" => false, "rmse_check" => true, "land_spun_up_ic" => true, "auto_jacobian_padding_bands" => nothing, "implicit_diffusion" => true, "z_elem" => 63, "implicit_sgs_entr_detr" => false, "use_auto_jacobian" => false, "disable_surface_flux_tendency" => false, "cfsite_number" => "site23", "turbconv" => "edonly_edmfx", "x_elem" => 6, "idealized_clouds" => false, "edmfx_mse_q_tot_upwinding" => "first_order", "check_nan_every" => 1024, "ice_model" => "prescribed", "subsidence" => nothing, "use_dynamic_krylov_rtol" => false, "toml" => ["toml/longrun_aquaplanet.toml"], "mesh_warp_type" => "SLEVE", "edmfx_detr_model" => nothing, "external_forcing_file" => nothing, "topo_smoothing" => true, "hyperdiff" => "CAM_SE", "output_dir" => nothing, "scm_coriolis" => nothing, "bubble" => false, "co2_model" => "maunaloa", "ode_algo" => "ARS343", "max_newton_iters_ode" => 1, "start_date" => "20100101", "use_dense_jacobian" => false, "implicit_noneq_cloud_formation" => false, "scalar_hyperdiffusion_coefficient" => 0.929738, "prognostic_surface" => "false", "detect_restart_file" => false, "edmfx_vertical_diffusion" => false, "restart_file" => nothing, "unique_seed" => false, "rayleigh_sponge" => true, "edmfx_tracer_upwinding" => "first_order", "divergence_damping_factor" => 5.0, "edmfx_entr_model" => nothing, "energy_check" => false, "land_model" => "integrated", "use_land_diagnostics" => true, "idealized_h2o" => false, "perturb_initstate" => true, "implicit_sgs_advection" => false, "edmfx_scale_blending" => "SmoothMinimum", "discrete_hydrostatic_balance" => false, "t_start" => "0secs", "netcdf_interpolate_z_over_msl" => true, "dz_bottom" => 30.0, "dt_save_state_to_disk" => "30days", "restart_t" => nothing, "advection_test" => false, "dt_cpl" => "120secs", "checkpoint_dt" => "31days", "topography" => "Earth", "aerosol_radiation" => true, "reference_job_id" => nothing, "perf_summary" => false, "vorticity_hyperdiffusion_coefficient" => 0.1857, "implicit_sgs_mass_flux" => false, "call_cloud_diagnostics_per_stage" => false, "viscous_sponge" => true, "strict_params" => true, "config_file" => "ClimaCoupler.jl/config/longrun_configs/amip_edonly_integrated_land.yml", "bucket_initial_condition" => "", "approximate_linear_solve_iters" => 2, "smagorinsky_lilly" => nothing, "enable_diagnostics" => true, "site_longitude" => -149.0, "evolving_ocean" => true, "implicit_sgs_vertdiff" => false, "prescribe_clouds_in_radiation" => false, "albedo_model" => "CouplerAlbedo", "FLOAT_TYPE" => "Float32", "deep_atmosphere" => true, "split_ode" => true, "amd_les" => false, "prescribe_ozone" => true, "updraft_number" => 1, "restart_dir" => nothing, "detect_restart_files" => false, "ls_adv" => nothing, "energy_q_tot_upwinding" => "vanleer_limiter", "prescribed_aerosols" => ["CB1", "CB2", "DST01", "OC1", "OC2", "SO4", "SSLT01"], "dt_nogw" => "1800secs", "output_default_diagnostics" => true, "edmfx_sgs_mass_flux" => false, "x_max" => 300000.0, "radiation_reset_rng_seed" => false, "newton_rtol" => 1.0e-5, "atmos_config_file" => "config/atmos_configs/climaatmos_edonly.yml", "edmfx_sgsflux_upwinding" => "none", "mode_name" => "amip", "land_temperature_anomaly" => "aquaplanet", "bucket_albedo_type" => "map_static", "vert_diff" => "false", "use_krylov_method" => false, "sleve_s" => 10.0)
+[ Info: Output directories experiments/ClimaEarth/output/amip_edonly_integrated_land/output_0018
+[ Info: Coupler artifacts directory experiments/ClimaEarth/output/amip_edonly_integrated_land/artifacts
+[ Info: Coupler checkpoint directory experiments/ClimaEarth/output/amip_edonly_integrated_land/checkpoints
+[ Info: Overwriting Atmos parameters from input TOML file(s): ["/home/pbachant/.julia/packages/ClimaAtmos/V27FP/toml/longrun_aquaplanet.toml"]
+┌ Warning: The configuration passed to ClimaAtmos contains unused keys: share_surface_space, use_coupler_diagnostics, bucket_initial_condition, energy_check, land_model, use_land_diagnostics, atmos_config_file, mode_name, land_temperature_anomaly, evolving_ocean, bucket_albedo_type, netcdf_interpolate_z_over_msl, print_config_dict, extra_atmos_diagnostics, ice_model, coupler_toml, restart_t, coupler_output_dir, dt_cpl, checkpoint_dt, component_dt_dict, conservation_softfail, restart_dir, restart_cache, rmse_check, detect_restart_files, land_spun_up_ic, config_file, unique_seed
+└ @ ClimaAtmos ~/.julia/packages/ClimaAtmos/V27FP/src/solver/yaml_helper.jl:89
+[ Info: Random seed set to 1234
+┌ Warning: Removing experiments/ClimaEarth/output/amip_edonly_integrated_land/output_0018/clima_atmos
+└ @ ClimaUtilities.OutputPathGenerator ~/.julia/packages/ClimaUtilities/5ClV5/src/OutputPathGenerator.jl:157
+[ Info: Running on CUDADevice
+[ Info: Setting up single-process ClimaAtmos run
+┌ Info: Time info:
+│   dt = "120secs"
+│   t_start = "0secs"
+│   t_end = "366days"
+└   floor_n_steps = 263520
+┌ Warning: Running simulations with equilibrium thermodynamics assumptions.
+└ @ ClimaAtmos ~/.julia/packages/ClimaAtmos/V27FP/src/solver/type_getters.jl:31
+┌ Info: numerics 
+│        `energy_q_tot_upwinding`::`Val{:vanleer_limiter}`
+│              `tracer_upwinding`::`Val{:vanleer_limiter}`
+│     `edmfx_mse_q_tot_upwinding`::`Val{:first_order}`
+│       `edmfx_sgsflux_upwinding`::`Val{:none}`
+│        `edmfx_tracer_upwinding`::`Val{:first_order}`
+│       `test_dycore_consistency`::`Nothing`
+│                       `limiter`::`Nothing`
+│                     `diff_mode`::`ClimaAtmos.Implicit`
+└                     `hyperdiff`::`ClimaAtmos.ClimaHyperdiffusion{Float32}`
+┌ Info: AtmosModel: 
+│ 
+│                             `water`::`ClimaAtmos.AtmosWater{ClimaAtmos.EquilMoistModel, ClimaAtmos.Microphysics0Moment, ClimaAtmos.QuadratureCloud{ClimaAtmos.SGSQuadrature{3, StaticArraysCore.SVector{3, Float32}, StaticArraysCore.SVector{3, Float32}}}, ClimaAtmos.Explicit, Nothing}`
+│                         `scm_setup`::`ClimaAtmos.SCMSetup{Nothing, Nothing, Nothing, Bool, Nothing}`
+│                         `radiation`::`ClimaAtmos.AtmosRadiation{ClimaAtmos.RRTMGPInterface.AllSkyRadiationWithClearSkyDiagnostics{ClimaAtmos.InteractiveCloudInRadiation}, ClimaAtmos.PrescribedOzone, ClimaAtmos.MaunaLoaCO2, ClimaAtmos.TimeVaryingInsolation}`
+│                          `turbconv`::`ClimaAtmos.AtmosTurbconv{ClimaAtmos.EDMFXModel{ClimaAtmos.NoEntrainment, ClimaAtmos.NoDetrainment, Val{false}, Val{true}, Val{false}, Val{false}, Val{false}, ClimaAtmos.SmoothMinimumBlending}, ClimaAtmos.EDOnlyEDMFX, ClimaAtmos.Explicit, ClimaAtmos.Explicit, ClimaAtmos.Explicit, ClimaAtmos.Explicit, ClimaAtmos.Explicit, Nothing, Nothing}`
+│                      `gravity_wave`::`ClimaAtmos.AtmosGravityWave{Nothing, Nothing}`
+│                `vertical_diffusion`::`Nothing`
+│                            `sponge`::`ClimaAtmos.AtmosSponge{ClimaAtmos.ViscousSponge{Float32}, ClimaAtmos.RayleighSponge{Float32}}`
+│                           `surface`::`ClimaAtmos.AtmosSurface{ClimaAtmos.ZonallySymmetricSST, ClimaAtmos.PrescribedSST, ClimaAtmos.CouplerAlbedo}`
+└                          `numerics`::`ClimaAtmos.AtmosNumerics{Val{:vanleer_limiter}, Val{:vanleer_limiter}, Val{:first_order}, Val{:none}, Val{:first_order}, Nothing, Nothing, ClimaAtmos.Implicit, ClimaAtmos.ClimaHyperdiffusion{Float32}}`
+┌ Info: Simulation info
+│   job_id = "amip_edonly_integrated_land"
+└   output_dir = "experiments/ClimaEarth/output/amip_edonly_integrated_land/output_0018/clima_atmos"
+┌ Info: z heights
+│   z_mesh.faces =
+│    64-element Vector{ClimaCore.Geometry.ZPoint{Float32}}:
+│     ZPoint(0.0)
+│     ZPoint(30.000004)
+│     ZPoint(62.974285)
+│     ZPoint(99.21583)
+│     ⋮
+│     ZPoint(54285.29)
+│     ZPoint(57136.2)
+└     ZPoint(60000.0)
+[ Info: Remapping Earth orography from ETOPO2022 data onto horizontal space
+[ Info: SLEVE mesh warp
+┌ Info: Resolution stats: 
+│   Nq = 4
+│   h_elem = 16
+│   z_elem = 63
+│   ncols = 24576
+└   ndofs_total = 1548288
+[ Info: Allocating Y: 6.718 s (11468500 allocations: 549.05 MiB)
+[ Info: using deep atmosphere
+[ Info: Allocating cache (p): 76.562 s (191222243 allocations: 10.37 GiB)
+[ Info: Using ODE config: `ClimaTimeSteppers.ARS343`
+[ Info: ode_configuration: 530.457 ms (748312 allocations: 36.76 MiB)
+[ Info: Progress logging enabled
+[ Info: Checking NaNs in the state every 1024 steps
+[ Info: get_callbacks: 478.719 ms (645349 allocations: 32.79 MiB)
+[ Info: Saving accumulated diagnostics to disk with frequency: 1 month
+[ Info: DictWriter: String[]
+[ Info: HDF5Writer: String[]
+[ Info: NetCDFWriter: ["orog_inst", "ts_1M_average", "ta_1M_average", "tas_1M_average", "uas_1M_average", "vas_1M_average", "thetaa_1M_average", "ha_1M_average", "pfull_1M_average", "zg_1M_average", "rhoa_1M_average", "ua_1M_average", "va_1M_average", "wa_1M_average", "hfes_1M_average", "hfss_1M_average", "ts_1M_min", "ts_1M_max", "hur_1M_average", "hus_1M_average", "cl_1M_average", "clw_1M_average", "cli_1M_average", "hussfc_1M_average", "evspsbl_1M_average", "hfls_1M_average", "pr_1M_average", "prra_1M_average", "prsn_1M_average", "prw_1M_average", "lwp_1M_average", "clwvi_1M_average", "clivi_1M_average", "rsd_1M_average", "rsdt_1M_average", "rsds_1M_average", "rsu_1M_average", "rsut_1M_average", "rsus_1M_average", "rld_1M_average", "rlds_1M_average", "rlu_1M_average", "rlut_1M_average", "rlus_1M_average", "rsdcs_1M_average", "rsdscs_1M_average", "rsucs_1M_average", "rsutcs_1M_average", "rsuscs_1M_average", "rldcs_1M_average", "rldscs_1M_average", "rlucs_1M_average", "rlutcs_1M_average", "tke_1M_average"]
+[ Info: initializing diagnostics: 13.051 s (29958378 allocations: 1.51 GiB)
+┌ Warning: The combination Dates.Millisecond and 1 month was not covered. Please add a method to handle this case.
+└ @ ClimaAtmos ~/.julia/packages/ClimaAtmos/V27FP/src/utils/utilities.jl:490
+┌ Warning: The checkpointing frequency (dt_save_state_to_disk = 31 days) should be an integer multiple of all diagnostics accumulation periods (1 month) so simulations can be safely restarted from any checkpoint
+└ @ ClimaAtmos ~/.julia/packages/ClimaAtmos/V27FP/src/solver/type_getters.jl:889
+[ Info: Prepared SciMLBase.CallbackSet callbacks: 14.095 ms (561 allocations: 27.54 KiB)
+[ Info: n_steps_per_cycle_per_cb (non diagnostics): Real[1024, 1, 30//1, 30//1]
+[ Info: n_steps_per_cycle (non diagnostics): 15360//1
+┌ Info: Jacobian algorithm: ManualSparseJacobian(
+│   topography_flag = ClimaAtmos.UseDerivative(),
+│   diffusion_flag = ClimaAtmos.UseDerivative(),
+│   sgs_advection_flag = ClimaAtmos.IgnoreDerivative(),
+│   sgs_entr_detr_flag = ClimaAtmos.IgnoreDerivative(),
+│   sgs_mass_flux_flag = ClimaAtmos.IgnoreDerivative(),
+│   sgs_nh_pressure_flag = ClimaAtmos.IgnoreDerivative(),
+│   sgs_vertdiff_flag = ClimaAtmos.IgnoreDerivative(),
+│   approximate_solve_iters = 2,
+└ )
+[ Info: Define ode function: 1.118 s (1056587 allocations: 48.32 MiB)
+┌ Warning: Setting surface albedo to 0.38 at the beginning of the simulation
+└ @ Main ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl/experiments/ClimaEarth/components/atmosphere/climaatmos.jl:110
+[ Info: init integrator: 77.348 s (72884871 allocations: 4.24 GiB)
+[ Info: Added diagnostics: 34.824 s (44995509 allocations: 2.22 GiB)
+[ Info: AMIPMode
+[ Info: AMIP/CMIP boundary conditions - do not expect energy conservation
+┌ Info: ClimaLand: using land IC file
+└   ic_path = "/net/sampo/data1/ClimaArtifacts/artifacts/soil_ic_2008_50m/soil_ic_2008_50m.nc"
+┌ Info: PrescribedOcean: using SST file
+└   sst_data = "/net/sampo/data1/ClimaArtifacts/artifacts/historical_sst_sic/MODEL.SST.HAD187001-198110.OI198111-202206.nc"
+┌ Info: PrescribedIce: using SIC file
+└   sic_data = "/net/sampo/data1/ClimaArtifacts/artifacts/historical_sst_sic/MODEL.ICE.HAD187001-198110.OI198111-202206.nc"
+[ Info: Component models initialized: (:atmos_sim, :ice_sim, :land_sim, :ocean_sim)
+[ Info: Using default coupler diagnostics
+┌ Warning: `update_field!` is not extended for the `liquid_precipitation` field of PrescribedIceSimulation: skipping update.
+└ @ ClimaCoupler.Interfacer ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl/src/Interfacer.jl:324
+┌ Warning: Setting surface albedo to 0.38 at the beginning of the simulation
+└ @ Main ~/calkit/clima-coupled-land-slowdown/ClimaCoupler.jl/experiments/ClimaEarth/components/atmosphere/climaatmos.jl:110
+[ Info: Memory in use: 11.354 GiB
+┌ Info: Progress
+│   simulation_time = "2 minutes"
+│   n_steps_completed = 1
+│   wall_time_per_step = "0 seconds"
+│   wall_time_total = "0 seconds"
+│   wall_time_remaining = "0 seconds"
+│   wall_time_spent = "0 seconds"
+│   percent_complete = "0.0%"
+│   estimated_sypd = "Inf"
+│   date_now = 2025-12-01T07:26:37.997
+└   estimated_finish_date = 2025-12-01T07:26:37.997
+[ Info: Using external CUDA profiler
+[ Info: Step 1 / 1
+┌ Info: Progress
+│   simulation_time = "4 minutes"
+│   n_steps_completed = 2
+│   wall_time_per_step = "12 seconds, 441 milliseconds"
+│   wall_time_total = "5 weeks, 2 days"
+│   wall_time_remaining = "5 weeks, 2 days"
+│   wall_time_spent = "24 seconds, 882 milliseconds"
+│   percent_complete = "0.0%"
+│   estimated_sypd = "0.026"
+│   date_now = 2025-12-01T07:26:50.741
+└   estimated_finish_date = 2026-01-08T06:08:11.740
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-008e.qdstrm'
+[1/1] [0%                          ] baseline-integrated.nsys-repProcessing events...
+[1/1] [0%                          ] baseline-integrated.nsys-rep[1/1] [5%                          ] baseline-integrated.nsys-rep[1/1] [===23%                      ] baseline-integrated.nsys-rep[1/1] [========42%                 ] baseline-integrated.nsys-rep[1/1] [=============60%            ] baseline-integrated.nsys-rep[1/1] [===================79%      ] baseline-integrated.nsys-rep[1/1] [=======================96%  ] baseline-integrated.nsys-rep[1/1] [========================100%] baseline-integrated.nsys-rep[1/1] [========================100%] baseline-integrated.nsys-rep
+Generated:
+	/home/pbachant/calkit/clima-coupled-land-slowdown/results/nsys/baseline-integrated.nsys-rep
